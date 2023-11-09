@@ -1,0 +1,35 @@
+:root {
+  --color-primary-light: #faf4ea;
+}
+/* Якийсь код, після футера ми вказуємо модвлбне вікно */
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
+}
+
+.modal {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.backdrop.is-hidden {
+  display: none;
+}
